@@ -4,6 +4,7 @@
 }
 
 :root {
+  --primary-color: #152427;
 }
 
 html {
@@ -19,3 +20,69 @@ a {
 }
 
 /* Resuable */
+.container {
+  --container-max-width: 1140px;
+  --padding-inline: 24px;
+  margin-inline: auto;
+  width: var(--container-max-width);
+  max-width: calc(100% - var(--padding-inline) * 2);
+}
+
+.btn {
+  --height: 57px;
+  --padding-inline: 20px;
+  padding: 0;
+  width: 173px;
+  height: var(--height);
+  padding-inline: var(--padding-inline);
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: var(--height);
+  border-radius: 40px;
+  border: 1.5px solid var(--primary-color);
+  background: var(--primary-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Header */
+.header {
+  --text-color-black-gray: #575d5e;
+  margin-top: 28px;
+  font-family: "Public Sans", sans-serif;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 38px;
+}
+
+.header__nav-link {
+  color: var(text-color-black-gray, #575d5e);
+  font-family: "Public Sans";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.header__nav-link--active,
+.header__nav-link:not(.header__nav-link--active):hover {
+  color: var(--primary-color, #152427);
+}
+
+.header__sign-up-btn {
+  margin-left: 88px;
+}
