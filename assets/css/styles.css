@@ -5,6 +5,7 @@
 
 :root {
   --primary-color: #152427;
+  --secondary-color: #e2eddf;
 }
 
 html {
@@ -21,10 +22,10 @@ a {
 
 /* Resuable */
 .container {
-  --container-max-width: 1140px;
+  --container-width: 1140px;
   --padding-inline: 24px;
   margin-inline: auto;
-  width: var(--container-max-width);
+  width: var(--container-width);
   max-width: calc(100% - var(--padding-inline) * 2);
 }
 
@@ -40,13 +41,24 @@ a {
   font-weight: 500;
   line-height: var(--height);
   border-radius: 40px;
-  border: 1.5px solid var(--primary-color);
+  border: none;
   background: var(--primary-color);
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .btn:hover {
   opacity: 0.9;
+  color: #000;
+  border: none;
+  background: var(--secondary-color);
+}
+
+.heading-lv1 {
+  color: var(--primary-color);
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
 /* Header */
@@ -56,7 +68,7 @@ a {
   font-family: "Public Sans", sans-serif;
 }
 
-.header__inner {
+.header__top {
   display: flex;
   align-items: center;
 }
@@ -72,7 +84,6 @@ a {
 
 .header__nav-link {
   color: var(text-color-black-gray, #575d5e);
-  font-family: "Public Sans";
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.55;
@@ -83,6 +94,110 @@ a {
   color: var(--primary-color, #152427);
 }
 
+.header__nav-link--active::after {
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: -27px;
+  width: 16px;
+  height: 2px;
+  display: block;
+  background: var(--primary-color, #143c3c);
+}
+
 .header__sign-up-btn {
   margin-left: 88px;
+}
+
+.header__separate {
+  margin-top: 13px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    #fff 0%,
+    #dddcdc 51.09%,
+    rgba(212, 212, 212, 0) 99.68%
+  );
+}
+
+.header__hero {
+  margin-top: 60px;
+}
+
+.header__content {
+  width: calc(393 / 1140 * 100%);
+}
+
+.header__title {
+  max-width: 368px;
+}
+
+.header__desc {
+  max-width: 341px;
+  color: var(--text-color-black-gray, #575d5e);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.header__controls {
+  margin-top: 42px;
+  display: flex;
+  gap: 36px;
+}
+
+.header__watch-video-btn {
+  padding: 0;
+  background: transparent;
+  border: none;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__half-circle {
+  width: 59px;
+  height: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid var(--primary-color);
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  rotate: -45deg;
+  transition: 0.3s;
+}
+
+.header__watch-video-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 50%;
+  background: #83a17d;
+  rotate: 45deg;
+}
+
+.header__text-video-btn {
+  color: var(--primary-color, #152427);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+  transition: 0.3s;
+}
+
+.header__watch-video-btn:hover .header__half-circle {
+  color: #83a17d;
+  rotate: 135deg;
+}
+
+.header__watch-video-btn:hover .header__watch-video-icon-wrapper {
+  rotate: -75deg;
+}
+
+.header__watch-video-btn:hover .header__text-video-btn {
+  color: #83a17d;
 }
