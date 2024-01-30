@@ -14,6 +14,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  height: 1000px;
 }
 
 a {
@@ -122,6 +123,8 @@ a {
 
 .header__hero {
   margin-top: 60px;
+  display: flex;
+  gap: 76px;
 }
 
 .header__content {
@@ -200,4 +203,34 @@ a {
 
 .header__watch-video-btn:hover .header__text-video-btn {
   color: #83a17d;
+}
+
+.header__media {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+.header__agency-image {
+  width: 202px;
+  height: 466px;
+  object-fit: cover;
+  border-radius: 110px;
+}
+
+.header__agency-image--center {
+  transform: translateY(77px);
+}
+
+.header__decor:first-child {
+  top: -32px;
+  left: -200px;
+  position: absolute;
+}
+
+.header__decor--bottom {
+  position: absolute;
+  rotate: 180deg;
+  left: 80px;
+  bottom: -130px;
 }
