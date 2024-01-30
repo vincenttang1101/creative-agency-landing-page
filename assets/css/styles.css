@@ -13,12 +13,18 @@ html {
 }
 
 body {
+  height: 10000px;
   font-size: 1.6rem;
-  height: 1000px;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 /* Resuable */
@@ -66,6 +72,7 @@ a {
 .header {
   --text-color-black-gray: #575d5e;
   margin-top: 28px;
+  height: 100vh;
   font-family: "Public Sans", sans-serif;
 }
 
@@ -103,7 +110,7 @@ a {
   width: 16px;
   height: 2px;
   display: block;
-  background: var(--primary-color, #143c3c);
+  background: #143c3c;
 }
 
 .header__sign-up-btn {
@@ -233,4 +240,51 @@ a {
   rotate: 180deg;
   left: 80px;
   bottom: -130px;
+}
+
+/* Brand */
+.brand {
+  margin-top: 130px;
+}
+
+.brand__inner {
+  padding: 76px 121px;
+  border-radius: 100.5px;
+  background: var(--secondary-color);
+}
+
+.brand__list {
+  display: flex;
+  align-items: center;
+  gap: 47px;
+}
+
+.brand__item {
+  display: flex;
+  align-items: center;
+}
+
+.brand__google {
+  color: var(--primary-color);
+  font-size: 3.1rem;
+  font-weight: 500;
+}
+
+.brand__slack {
+  color: #143c3c;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.brand__agworld {
+  color: #163c35;
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+
+.brand__heroku {
+  color: #143c3c;
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.105em;
 }
