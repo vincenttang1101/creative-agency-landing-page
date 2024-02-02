@@ -250,8 +250,8 @@ button {
   bottom: -130px;
 }
 
-/* Brand */
-.brand {
+/* Main */
+.main {
   margin-top: 130px;
 }
 
@@ -369,4 +369,52 @@ button {
 
 .service__control-btn--next {
   rotate: 180deg;
+}
+
+.service__list {
+  margin-top: 76px;
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  column-gap: 16px;
+}
+
+.service__thumbnail-wrapper {
+  height: 318px;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+.service__thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.service__info {
+  padding: 24px 18px;
+  border-radius: 0 0 20px 20px;
+}
+
+.service__title {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.service__desc {
+  margin-top: 18px;
+  color: #7d8188;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.71;
+}
+
+.service__thumbnail-wrapper:hover .service__thumbnail {
+  transform: scale(1.1);
+}
+
+.service__item:hover .service__info {
+  box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
 }
