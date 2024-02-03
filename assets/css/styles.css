@@ -7,6 +7,7 @@
   --primary-color: #152427;
   --secondary-color: #e2eddf;
   --accent-color-1: #143c3c;
+  --accent-color-2: #575d5e;
 }
 
 html {
@@ -78,7 +79,6 @@ button {
 
 /* Header */
 .header {
-  --text-color-black-gray: #575d5e;
   margin-top: 28px;
   height: 100vh;
   font-family: "Public Sans", sans-serif;
@@ -152,7 +152,7 @@ button {
 
 .header__desc {
   max-width: 341px;
-  color: var(--text-color-black-gray, #575d5e);
+  color: var(--accent-color-2, #575d5e);
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.55;
@@ -417,4 +417,140 @@ button {
 
 .service__item:hover .service__info {
   box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+/* About */
+.about {
+  margin-top: 160px;
+}
+
+.about__inner {
+  display: grid;
+  grid-template-columns: 1fr calc(485 / 591 * 100%);
+}
+
+.about__media {
+  position: relative;
+  font-family: "Public Sans";
+}
+
+.about__image-wrapper {
+  position: relative;
+  display: flex;
+  gap: 21px;
+}
+
+.about__image {
+  width: 284px;
+  height: 480px;
+  border-radius: 210px;
+  object-fit: cover;
+  box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
+}
+
+.about__image--bottom {
+  margin-top: 77px;
+}
+
+.about__decor {
+  position: absolute;
+  top: 5px;
+  left: 40px;
+}
+
+.about__card {
+  position: absolute;
+  bottom: 8px;
+  right: -9px;
+  padding: 19px 23px 11px;
+  background: #fff;
+}
+
+.about__title {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.about__label {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.about__label--balance {
+  margin-top: 6px;
+  color: var(--accent-color-2);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.about__active-progress {
+  margin-top: 10px;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.about__progress-bar {
+  position: relative;
+  margin-top: 3px;
+  height: 2px;
+  border-radius: 10px;
+  background: #eaeaea;
+}
+
+.about__active-progress-bar {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  border-radius: 10px;
+  background: #83a17d;
+}
+
+.about__label--status {
+  margin-top: 3px;
+  text-align: right;
+}
+
+.about__circle-outter {
+  width: 11px;
+  height: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #eaeaea;
+}
+
+.about__circle-inner {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent-color-1);
+}
+
+.about__team {
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__avatar-group {
+  margin-right: -5px;
+  display: flex;
+}
+
+.about__avatar-image:not(:first-child) {
+  margin-left: -6px;
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
 }
