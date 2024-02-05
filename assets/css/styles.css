@@ -672,6 +672,7 @@ button {
 
 .process__item {
   position: relative;
+  padding: 0 30px;
   height: 166px;
   display: flex;
   align-items: center;
@@ -741,7 +742,7 @@ button {
   color: var(--accent-color-1);
   font-size: 7.2rem;
   font-weight: 600;
-  line-height: 7.2;
+  line-height: 0.72;
 }
 
 .process__title {
@@ -760,9 +761,9 @@ button {
 }
 
 .process__item:hover {
-  background: var(--secondary-color);
   border-radius: 33px;
   border: none;
+  background: var(--secondary-color);
 }
 
 .process__item:hover .process__link {
