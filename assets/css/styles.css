@@ -773,6 +773,7 @@ button {
 
 /* Feature */
 .feature {
+  margin-top: 209px;
   padding: 116px 130px 63px;
   background: var(--accent-color-1);
 }
