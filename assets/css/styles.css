@@ -848,3 +848,107 @@ button {
   top: -70px;
   right: -50px;
 }
+
+/* Share */
+.share {
+  margin-top: 140px;
+}
+
+.share__header {
+  margin-inline: auto;
+  width: 47%;
+  text-align: center;
+}
+
+.share__desc {
+  color: var(--accent-color-3);
+  font-weight: 500;
+}
+
+.share__desc--header {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  line-height: 1.62;
+}
+
+.share__list {
+  margin-top: 103px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 45px;
+}
+
+.share__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: 362px;
+  border-radius: 160px;
+  border: 1.5px solid #cecece;
+  transition: 0.3s;
+}
+
+.share__title {
+  margin-top: 19px;
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.share__desc--list {
+  margin-top: 12px;
+  max-width: 286px;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.71;
+}
+
+.share__item:nth-child(1) .share__icon {
+  margin-top: 80px;
+}
+
+.share__item:nth-child(1) .share__title {
+  margin-top: 26px;
+}
+
+.share__item:nth-child(1) .share__desc--list {
+  margin-top: 9px;
+}
+
+.share__item:nth-child(2) .share__icon {
+  margin-top: 60px;
+}
+
+.share__item:nth-child(2) .share__title {
+  margin-top: 23px;
+}
+
+.share__item:nth-child(2) .share__desc--list {
+  margin-top: 12px;
+}
+
+.share__item:nth-child(3) .share__icon {
+  margin-top: 43px;
+}
+
+.share__item:nth-child(3) .share__title {
+  margin-top: 19px;
+}
+
+.share__item:nth-child(3) .share__desc--list {
+  margin-top: 12px;
+}
+
+.share__item:hover {
+  transform: translateY(-59px);
+  border: none;
+  background: #fff;
+  box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
+}
+
+.share__item:nth-child(3) .share__icon {
+  width: 49px;
+  height: 49px;
+}
