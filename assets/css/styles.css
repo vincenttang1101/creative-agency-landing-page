@@ -757,6 +757,7 @@ button {
   max-width: 572px;
   color: var(--accent-color-3);
   font-size: 1.8rem;
+  font-family: "Public Sans";
   font-weight: 500;
   line-height: 1.55;
 }
