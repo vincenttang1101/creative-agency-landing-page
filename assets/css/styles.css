@@ -10,6 +10,7 @@
   --accent-color-2: #575d5e;
   --accent-color-3: #7d8188;
   --accent-color-4: #83a17d;
+  --accent-color-5: #6a8383;
 }
 
 html {
@@ -17,7 +18,6 @@ html {
 }
 
 body {
-  height: 10000px;
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
@@ -803,7 +803,7 @@ button {
 }
 
 .feature__desc {
-  color: #6a8383;
+  color: var(--accent-color-5);
   font-family: "Public Sans";
   font-size: 1.8rem;
   font-weight: 500;
@@ -1091,8 +1091,14 @@ button {
 
 /* Footer */
 .footer {
+  margin-top: 102px;
   padding: 72px 130px 50px;
   background: var(--accent-color-1);
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__left {
@@ -1117,14 +1123,14 @@ button {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid #6a8383;
+  border-bottom: 1px solid var(--accent-color-5);
   outline: none;
   background: transparent;
 }
 
 .footer__input,
 .footer__input::placeholder {
-  color: #6a8383;
+  color: var(--accent-color-5);
   font-size: 2.2rem;
   font-weight: 600;
   line-height: 1;
@@ -1158,4 +1164,31 @@ button {
 
 .footer__social-item:hover {
   background: #a75325;
+}
+
+.footer__right {
+  width: 39%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__sub-title {
+  margin-bottom: 18px;
+  color: #fff;
+  font-family: "Public Sans";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.footer__link {
+  color: var(--Scondery-color-gray, var(--accent-color-5));
+  font-family: "Public Sans";
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.25;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
 }
