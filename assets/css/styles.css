@@ -1088,3 +1088,74 @@ button {
   color: var(--secondary-color);
   background: var(--primary-color);
 }
+
+/* Footer */
+.footer {
+  padding: 72px 130px 50px;
+  background: var(--accent-color-1);
+}
+
+.footer__left {
+  width: calc(411 / 1140 * 100%);
+}
+
+.footer__title {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.footer__form {
+  position: relative;
+  margin-top: 25px;
+  max-width: 354px;
+}
+
+.footer__input {
+  padding-bottom: 36px;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #6a8383;
+  outline: none;
+  background: transparent;
+}
+
+.footer__input,
+.footer__input::placeholder {
+  color: #6a8383;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.footer__submit {
+  position: absolute;
+  padding: 0;
+  bottom: 32px;
+  right: 13px;
+  border: none;
+  background: transparent;
+}
+
+.footer__social-list {
+  margin-top: 47px;
+  display: flex;
+  gap: 22px;
+}
+
+.footer__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid #265252;
+}
+
+.footer__social-item:hover {
+  background: #a75325;
+}
