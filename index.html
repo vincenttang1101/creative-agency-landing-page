@@ -94,9 +94,16 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <!-- Font Awesome  -->
+    <script
+      src="https://kit.fontawesome.com/5bd9960cfd.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <!-- Header -->
+    <!-- PC header -->
     <header class="header">
       <div class="container">
         <!-- Header top -->
@@ -198,8 +205,48 @@
       </div>
     </header>
 
+    <!-- Table/mobile header -->
+    <header class="medium-header">
+      <div class="container">
+        <div class="medium-header__top">
+          <img
+            src="./assets/icons/logo.svg"
+            alt="Modulars"
+            class="header__logo"
+          />
+          <div class="medium-header__row-right">
+            <button class="btn medium-header__sign-up-btn">Sign up</button>
+            <i class="fa-solid fa-bars medium-header__menu-icon"></i>
+          </div>
+        </div>
+
+        <div class="medium-header__overplay"></div>
+
+        <nav class="medium-header__nav">
+          <ul class="medium-header__nav-list">
+            <li class="medium-header__nav-item">
+              <a
+                href="#!"
+                class="medium-header__nav-link medium-header__nav-link--active"
+                >Home</a
+              >
+            </li>
+            <li class="medium-header__nav-item">
+              <a href="#!" class="medium-header__nav-link">About</a>
+            </li>
+            <li class="medium-header__nav-item">
+              <a href="#!" class="medium-header__nav-link">Blog</a>
+            </li>
+            <li class="medium-header__nav-item">
+              <a href="#!" class="medium-header__nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <!-- Main -->
-    <main class="main">
+    <main class="main" hidden>
       <!-- Brand -->
       <div class="brand">
         <div class="container">
@@ -891,7 +938,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="display: none">
       <div class="container">
         <div class="footer__inner">
           <!-- Row left -->
@@ -1049,5 +1096,25 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const mediumHeaderMenuIcon = document.querySelector(
+        ".medium-header__menu-icon"
+      );
+      const mediumHeaderOverplay = document.querySelector(
+        ".medium-header__overplay"
+      );
+      const mediumHeaderNav = document.querySelector(".medium-header__nav");
+
+      mediumHeaderMenuIcon.addEventListener("click", () => {
+        mediumHeaderOverplay.classList.toggle("medium-header__overplay--open");
+        mediumHeaderNav.classList.toggle("medium-header__nav--open");
+      });
+
+      mediumHeaderOverplay.addEventListener("click", () => {
+        mediumHeaderOverplay.classList.remove("medium-header__overplay--open");
+        mediumHeaderNav.classList.remove("medium-header__nav--open");
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,89 @@
+/* PC */
+@media screen and (min-width: 992px) {
+  .medium-header {
+    display: none;
+  }
+}
+
+/* Table/mobile */
+@media screen and (max-width: 991.98px) {
+  .header {
+    display: none;
+  }
+
+  .medium-header {
+    margin-top: 26px;
+  }
+
+  .medium-header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .medium-header__row-right {
+    display: flex;
+  }
+
+  .medium-header__menu-icon {
+    margin-left: 30px;
+    font-size: 3rem;
+  }
+
+  .medium-header__sign-up-btn {
+    --height: 32px;
+    min-width: 92px;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .medium-header__overplay {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: ease 0.5s;
+  }
+
+  .medium-header__overplay--open {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .medium-header__nav {
+    position: fixed;
+    inset: 0 0 0 40%;
+    z-index: 2;
+    padding: 40px;
+    transform: translateX(100%);
+    transition: ease 0.5s;
+    background: #fff;
+  }
+
+  .medium-header__nav--open {
+    display: block;
+    transform: translateX(0%);
+  }
+
+  .medium-header__nav-link {
+    color: var(--accent-color-2);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+  }
+
+  .medium-header__nav-item:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+}

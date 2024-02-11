@@ -1,6 +1,7 @@
 /* Common */
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 :root {
@@ -22,10 +23,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
 button {
   font-family: inherit;
   font-size: inherit;
@@ -44,7 +41,7 @@ button {
   --height: 57px;
   --padding-inline: 20px;
   padding: 0;
-  width: 173px;
+  min-width: 173px;
   height: var(--height);
   padding-inline: var(--padding-inline);
   color: #fff;
@@ -101,7 +98,7 @@ button {
 }
 
 .header__nav-link {
-  color: var(text-color-black-gray, #575d5e);
+  color: var(--accent-color-2, #575d5e);
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.55;
