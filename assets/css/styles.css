@@ -21,6 +21,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
+  height: 10000px;
 }
 
 button {
@@ -88,6 +89,24 @@ button {
   align-items: center;
 }
 
+.header__logo {
+  font-size: 1rem;
+  color: var(--accent-color-1);
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.header__logo-icon {
+  width: 2.7em;
+  height: 2.7em;
+}
+
+.header__logo-label {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
 .header__nav {
   margin-left: auto;
 }
@@ -138,7 +157,7 @@ button {
 .header__hero {
   margin-top: 60px;
   display: flex;
-  gap: 76px;
+  column-gap: 76px;
 }
 
 .header__content {

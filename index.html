@@ -103,16 +103,34 @@
     ></script>
   </head>
   <body>
-    <!-- PC header -->
+    <!-- PC -->
     <header class="header">
       <div class="container">
         <!-- Header top -->
         <div class="header__top">
-          <img
-            src="./assets/icons/logo.svg"
-            alt="Modulars"
-            class="header__logo"
-          />
+          <span class="header__logo">
+            <svg
+              viewBox="0 0 27 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="header__logo-icon"
+            >
+              <path
+                d="M22.9998 13.1177C22.9998 15.2736 22.2664 17.3655 20.9202 19.0495C19.574 20.7335 17.6951 21.9096 15.592 22.3844L13.4998 13.1177H22.9998Z"
+                fill="currentColor"
+              />
+              <path
+                d="M10.7381 4.02764C12.801 3.4009 15.0157 3.49448 17.0183 4.29299C19.0209 5.0915 20.6924 6.54745 21.7581 8.42163L13.4997 13.1174L10.7381 4.02764Z"
+                fill="currentColor"
+              />
+              <path
+                d="M8.39179 21.1275C6.57397 19.9683 5.2045 18.2253 4.5084 16.1848C3.8123 14.1443 3.83097 11.9277 4.56134 9.89924L13.4996 13.1175L8.39179 21.1275Z"
+                fill="currentColor"
+              />
+              <circle cx="13.4998" cy="13.1177" r="2.5" fill="#83A17D" />
+            </svg>
+            <span class="header__logo-label">MODULARS</span>
+          </span>
           <nav class="header__nav">
             <ul class="header__nav-list">
               <li>
@@ -131,7 +149,32 @@
               </li>
             </ul>
           </nav>
+
           <button class="btn header__sign-up-btn">Sign up</button>
+
+          <!-- Tablet/mobile -->
+          <i class="fa-solid fa-bars header__md-menu-icon"></i>
+          <div class="header__md-overplay"></div>
+          <nav class="header__md-nav">
+            <ul class="header__md-nav-list">
+              <li class="header__md-nav-item">
+                <a
+                  href="#!"
+                  class="header__md-nav-link header__md-nav-link--active"
+                  >Home</a
+                >
+              </li>
+              <li class="header__md-nav-item">
+                <a href="#!" class="header__md-nav-link">About</a>
+              </li>
+              <li class="header__md-nav-item">
+                <a href="#!" class="header__md-nav-link">Blog</a>
+              </li>
+              <li class="header__md-nav-item">
+                <a href="#!" class="header__md-nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
         <!-- Separate -->
@@ -149,7 +192,7 @@
               toady.
             </p>
             <div class="header__controls">
-              <button class="btn">Get in touch</button>
+              <button class="btn header__touch-btn">Get in touch</button>
               <button class="header__watch-video-btn">
                 <span class="header__half-circle">
                   <span class="header__watch-video-icon-wrapper">
@@ -202,46 +245,6 @@
             />
           </figure>
         </div>
-      </div>
-    </header>
-
-    <!-- Table/mobile header -->
-    <header class="medium-header">
-      <div class="container">
-        <div class="medium-header__top">
-          <img
-            src="./assets/icons/logo.svg"
-            alt="Modulars"
-            class="header__logo"
-          />
-          <div class="medium-header__row-right">
-            <button class="btn medium-header__sign-up-btn">Sign up</button>
-            <i class="fa-solid fa-bars medium-header__menu-icon"></i>
-          </div>
-        </div>
-
-        <div class="medium-header__overplay"></div>
-
-        <nav class="medium-header__nav">
-          <ul class="medium-header__nav-list">
-            <li class="medium-header__nav-item">
-              <a
-                href="#!"
-                class="medium-header__nav-link medium-header__nav-link--active"
-                >Home</a
-              >
-            </li>
-            <li class="medium-header__nav-item">
-              <a href="#!" class="medium-header__nav-link">About</a>
-            </li>
-            <li class="medium-header__nav-item">
-              <a href="#!" class="medium-header__nav-link">Blog</a>
-            </li>
-            <li class="medium-header__nav-item">
-              <a href="#!" class="medium-header__nav-link">Contact</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
 
@@ -1099,21 +1102,21 @@
 
     <script>
       const mediumHeaderMenuIcon = document.querySelector(
-        ".medium-header__menu-icon"
+        ".header__md-menu-icon"
       );
       const mediumHeaderOverplay = document.querySelector(
-        ".medium-header__overplay"
+        ".header__md-overplay"
       );
-      const mediumHeaderNav = document.querySelector(".medium-header__nav");
+      const mediumHeaderNav = document.querySelector(".header__md-nav");
 
       mediumHeaderMenuIcon.addEventListener("click", () => {
-        mediumHeaderOverplay.classList.toggle("medium-header__overplay--open");
-        mediumHeaderNav.classList.toggle("medium-header__nav--open");
+        mediumHeaderOverplay.classList.toggle("header__md-overplay--open");
+        mediumHeaderNav.classList.toggle("header__md-nav--open");
       });
 
       mediumHeaderOverplay.addEventListener("click", () => {
-        mediumHeaderOverplay.classList.remove("medium-header__overplay--open");
-        mediumHeaderNav.classList.remove("medium-header__nav--open");
+        mediumHeaderOverplay.classList.remove("header__md-overplay--open");
+        mediumHeaderNav.classList.remove("header__md-nav--open");
       });
     </script>
   </body>
