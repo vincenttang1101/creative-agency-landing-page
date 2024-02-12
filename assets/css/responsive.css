@@ -6,7 +6,7 @@
   }
 }
 
-/* Table/mobile */
+/* Tablet/mobile */
 @media screen and (max-width: 991.98px) {
   .header__nav-list {
     display: none;
@@ -82,17 +82,19 @@
   }
 
   .header__content {
-    width: 100vw;
+    width: 100%;
   }
 
   .header__title {
-    max-width: 78%;
+    width: 70%;
     font-size: 4rem;
+    max-width: none;
   }
 
   .header__desc {
     margin-top: 10px;
-    max-width: 60%;
+    width: 73%;
+    max-width: none;
   }
 
   .header__decor:first-child,
@@ -105,7 +107,7 @@
   }
 
   .header__media {
-    margin-inline: auto;
+    justify-content: space-between;
   }
 
   .header__agency-image {
@@ -139,23 +141,20 @@
     font-size: 3rem;
     font-weight: 800;
     line-height: 1.33;
+    width: 100%;
   }
 
   .header__desc {
-    max-width: 64%;
     margin-top: 10px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.71;
   }
 
-  .btn {
-    min-width: 92px;
-  }
-
   .header__sign-up-btn {
     --height: 32px;
     --padding-inline: 25px 24px;
+    min-width: 92px;
     font-size: 1.2rem;
     font-weight: 600;
   }
@@ -163,6 +162,7 @@
   .header__touch-btn {
     --height: 35px;
     --padding-inline: 19px 20px;
+    min-width: 107px;
     font-size: 1.2rem;
     font-weight: 500;
   }
