@@ -120,11 +120,23 @@
 }
 
 /* Landscape/portrait mobile */
-@media screen and (min-width: 576px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
+  .brand__inner {
+    border-radius: 30px;
+  }
+
+  .brand__list {
+    font-size: 0.8rem;
+    gap: 20px;
+  }
 }
 
 /* Portrait mobile */
 @media screen and (max-width: 575.98px) {
+  .main {
+    margin-top: 95px;
+  }
+
   .header__logo {
     font-size: calc(16 / 27 * 1rem);
   }
@@ -192,5 +204,10 @@
 
   .header__md-nav {
     inset: 0 0 0 30%;
+  }
+
+  .brand__inner {
+    padding: 0;
+    min-height: 251px;
   }
 }

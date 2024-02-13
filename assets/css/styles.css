@@ -80,7 +80,7 @@ button {
 /* Header */
 .header {
   margin-top: 28px;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Public Sans", sans-serif;
 }
 
@@ -274,43 +274,55 @@ button {
 }
 
 .brand__inner {
-  padding: 76px 121px;
+  min-height: 201px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 100.5px;
   background: var(--secondary-color);
 }
 
 .brand__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 47px;
+  font-size: 1rem;
 }
 
 .brand__item {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
 .brand__google {
   color: var(--primary-color);
-  font-size: 3.1rem;
+  font-size: 2.7em;
   font-weight: 500;
 }
 
 .brand__slack {
   color: var(--accent-color-1);
-  font-size: 3.2rem;
+  font-size: 2.7em;
   font-weight: 600;
 }
 
 .brand__agworld {
   color: #163c35;
-  font-size: 2.6rem;
+  font-size: 2.7em;
+  font-weight: 400;
+}
+
+.brand__riotino {
+  font-family: "Sonsie One", system-ui;
+  font-size: 2.7em;
   font-weight: 400;
 }
 
 .brand__heroku {
-  color: var(--accent-color-1);
-  font-size: 1.9rem;
+  font-size: 2.7em;
   font-weight: 600;
   letter-spacing: 0.105em;
 }
