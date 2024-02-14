@@ -129,6 +129,19 @@
     font-size: 0.8rem;
     gap: 20px;
   }
+
+  .service__control {
+    display: none;
+  }
+
+  .service__list {
+    grid-template-columns: repeat(3, 100%);
+  }
+
+  .service__item {
+    min-width: 100%;
+    transform: translateX(calc(-100% - 16px));
+  }
 }
 
 /* Portrait mobile */
