@@ -487,6 +487,10 @@ button {
   margin-top: 77px;
 }
 
+.about__image-top-wrapper {
+  position: relative;
+}
+
 .about__decor {
   position: absolute;
   top: -33px;

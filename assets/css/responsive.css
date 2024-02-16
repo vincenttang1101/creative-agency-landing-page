@@ -1,4 +1,39 @@
-/* PC */
+/* Large Desktop */
+@media (max-width: 1199.98px) {
+  .about {
+    margin-top: 51px;
+  }
+
+  .about__inner {
+    flex-direction: column;
+    row-gap: 53px;
+    justify-content: flex-start;
+  }
+
+  .about__media,
+  .about__content {
+    width: unset;
+  }
+
+  .about__content {
+    max-width: 85vw;
+  }
+
+  .about__heading {
+    font-size: 3rem;
+    max-width: 70vw;
+  }
+
+  .about__desc--large {
+    font-size: 1.4rem;
+  }
+
+  .about__decor {
+    display: none;
+  }
+}
+
+/* Desktop */
 @media screen and (min-width: 992px) {
   .header__md-menu-icon,
   .header__md-nav {
@@ -124,7 +159,7 @@
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
+@media screen and (min-width: 768px) {
 }
 
 /* Landscape/portrait mobile */
@@ -168,6 +203,24 @@
 
   .service__control-btn--toggle {
     display: flex;
+  }
+
+  .about__image {
+    max-width: 42vw;
+  }
+
+  .about__stats {
+    font-size: 2.6rem;
+  }
+
+  .about__desc--small {
+    font-size: 1rem;
+    max-width: unset;
+  }
+
+  .about__info {
+    column-gap: 8px;
+    justify-content: unset;
   }
 }
 
@@ -259,5 +312,10 @@
   .service__resp-control-icon {
     width: 12px;
     height: 12px;
+  }
+
+  .about__card {
+    left: 0;
+    right: unset;
   }
 }
