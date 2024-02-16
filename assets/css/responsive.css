@@ -1,5 +1,13 @@
 /* Large Desktop */
 @media (max-width: 1199.98px) {
+  .header__agency-image {
+    width: 170px;
+  }
+
+  .header__decor--bottom {
+    left: 9px;
+  }
+
   .about {
     margin-top: 51px;
   }
@@ -19,16 +27,11 @@
     max-width: 85vw;
   }
 
-  .about__heading {
-    font-size: 3rem;
-    max-width: 70vw;
-  }
-
-  .about__desc--large {
-    font-size: 1.4rem;
-  }
-
   .about__decor {
+    display: none;
+  }
+
+  .process__image {
     display: none;
   }
 }
@@ -156,10 +159,13 @@
   .service__control-btn--toggle {
     display: none;
   }
-}
 
-/* Tablet */
-@media screen and (min-width: 768px) {
+  .process__item {
+    padding: 107px 20px;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
+  }
 }
 
 /* Landscape/portrait mobile */
@@ -219,8 +225,21 @@
   }
 
   .about__info {
-    column-gap: 8px;
+    column-gap: 15px;
     justify-content: unset;
+    max-width: 93%;
+  }
+
+  .process__serial {
+    font-size: 5rem;
+  }
+
+  .process__heading {
+    margin-top: 16px;
+  }
+
+  .process__list {
+    margin-top: 50px;
   }
 }
 
@@ -317,5 +336,27 @@
   .about__card {
     left: 0;
     right: unset;
+  }
+
+  .about__heading {
+    font-size: 3rem;
+    max-width: 70vw;
+  }
+
+  .about__desc--large {
+    font-size: 1.4rem;
+  }
+
+  .process__heading {
+    font-size: 3rem;
+  }
+
+  .process__heading-endline::after {
+    width: 48px;
+    right: -72px;
+  }
+
+  .process__desc {
+    font-size: 1.4rem;
   }
 }
