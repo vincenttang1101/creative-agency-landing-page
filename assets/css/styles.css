@@ -834,7 +834,22 @@ button {
   line-height: 1.23;
 }
 
-.feature__heading::after {
+.feature__heading-endline {
+  position: relative;
+}
+
+.feature__heading-endline::after {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  right: -90px;
+  display: inline-block;
+  width: 66px;
+  height: 2px;
+  background: var(--accent-color-4);
+}
+
+/* .feature__heading::after {
   content: "";
   position: relative;
   bottom: 9px;
@@ -843,7 +858,7 @@ button {
   width: 66px;
   height: 2px;
   background: var(--accent-color-4);
-}
+} */
 
 .feature__desc {
   color: var(--accent-color-5);

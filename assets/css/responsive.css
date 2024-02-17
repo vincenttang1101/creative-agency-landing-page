@@ -166,6 +166,16 @@
     justify-content: center;
     row-gap: 40px;
   }
+
+  .feature__header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .feature__icon-road,
+  .feature__icon-flower {
+    display: none;
+  }
 }
 
 /* Landscape/portrait mobile */
@@ -358,5 +368,27 @@
 
   .process__desc {
     font-size: 1.4rem;
+  }
+
+  .feature__heading {
+    font-size: 3rem;
+    line-height: 1.33;
+    max-width: 70vw;
+  }
+
+  .feature__heading-endline::after {
+    width: 38px;
+    bottom: 18px;
+    right: -60px;
+  }
+
+  .feature {
+    padding: 53px 0 101px 0;
+  }
+
+  .feature__desc {
+    font-size: 1.4rem;
+    line-height: 1.71;
+    max-width: 58vw;
   }
 }
