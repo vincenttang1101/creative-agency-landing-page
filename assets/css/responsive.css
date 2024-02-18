@@ -176,6 +176,29 @@
   .feature__icon-flower {
     display: none;
   }
+
+  .share {
+    margin-top: 50px;
+  }
+
+  .share__header {
+    width: 74vw;
+  }
+
+  .share__list {
+    margin-top: 30px;
+    grid-template-columns: 300px;
+    justify-content: center;
+    row-gap: 30px;
+  }
+
+  .share__item:hover {
+    transform: unset;
+  }
+
+  .share__desc--list {
+    width: 70vw;
+  }
 }
 
 /* Landscape/portrait mobile */
@@ -390,5 +413,20 @@
     font-size: 1.4rem;
     line-height: 1.71;
     max-width: 58vw;
+  }
+
+  .share__heading {
+    font-size: 3rem;
+    line-height: 1.33;
+  }
+
+  .share__desc--header {
+    font-size: 1.4rem;
+    line-height: 1.71;
+  }
+
+  .share__desc--list {
+    font-size: 1.2rem;
+    line-height: 2;
   }
 }
