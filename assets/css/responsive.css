@@ -34,6 +34,29 @@
   .process__image {
     display: none;
   }
+
+  .blog__content {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    row-gap: 12px;
+  }
+
+  .blog {
+    margin-top: 50px;
+  }
+
+  .blog__list {
+    margin-top: 38px;
+    display: grid;
+    grid-template-columns: 80vw;
+    justify-content: center;
+    row-gap: 52px;
+  }
+
+  .blog__desc {
+    max-width: 72vw;
+  }
 }
 
 /* Desktop */
@@ -428,5 +451,33 @@
   .share__desc--list {
     font-size: 1.2rem;
     line-height: 2;
+  }
+
+  .blog__heading {
+    font-size: 3rem;
+    line-height: 1.33;
+  }
+
+  .blog__desc {
+    font-size: 1.4rem;
+    line-height: 1.85;
+  }
+
+  .blog__intro-title {
+    font-size: 0.8rem;
+  }
+
+  .blog__title {
+    font-size: 1.6rem;
+    line-height: 1.87;
+  }
+
+  .blog__date {
+    font-size: 0.8rem;
+  }
+
+  .blog__heading-endline::after {
+    right: -15px;
+    width: 66px;
   }
 }

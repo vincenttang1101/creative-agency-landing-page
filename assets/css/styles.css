@@ -1041,13 +1041,19 @@ button {
 }
 
 .blog__heading {
+  margin-top: 10px;
   max-width: 571px;
 }
 
-.blog__heading::after {
+.blog__heading-endline {
+  position: relative;
+}
+
+.blog__heading-endline::after {
   content: "";
   position: relative;
   bottom: 5px;
+  right: -20px;
   display: inline-block;
   width: 82px;
   height: 3px;
@@ -1106,12 +1112,13 @@ button {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.66;
+  word-break: break-word;
 }
 
 .blog__date {
   position: absolute;
   bottom: 12px;
-  right: 22px;
+  right: 0;
   width: 100%;
   text-align: right;
   color: var(--accent-color-2);
@@ -1129,6 +1136,10 @@ button {
   height: 1px;
   display: block;
   background: #c4c4c4;
+}
+
+.blog__text-date {
+  margin-right: 22px;
 }
 
 .blog__item:hover .blog__thumbnail {
