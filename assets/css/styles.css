@@ -1249,6 +1249,16 @@ button {
   line-height: 1.55;
 }
 
+.footer__row-resp {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.footer__overplay {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .footer__link {
   color: var(--Scondery-color-gray, var(--accent-color-5));
   font-family: "Public Sans";

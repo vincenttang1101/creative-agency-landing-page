@@ -1248,6 +1248,7 @@
       const footerMenuIcon = document.querySelector(".footer__menu-icon");
       const footerOverplay = document.querySelector(".footer__overplay");
       const footerRowResp = document.querySelector(".footer__row-resp");
+      const footerCloseIcon = document.querySelector(".footer__close-icon");
 
       footerMenuIcon.addEventListener("click", () => {
         footerOverplay.classList.toggle("footer__overplay--is-open");
@@ -1256,6 +1257,11 @@
 
       footerOverplay.addEventListener("click", function () {
         this.classList.remove("footer__overplay--is-open");
+        footerRowResp.classList.remove("footer__row-resp--is-open");
+      });
+
+      footerCloseIcon.addEventListener("click", function () {
+        footerOverplay.classList.remove("footer__overplay--is-open");
         footerRowResp.classList.remove("footer__row-resp--is-open");
       });
     </script>
