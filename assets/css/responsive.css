@@ -71,7 +71,7 @@
   }
 
   .footer__menu-icon {
-    display: inline-block;
+    display: inline-block !important;
   }
 
   .footer__sub-title {
@@ -111,12 +111,12 @@
 
   .footer__close-icon {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     padding-right: 10px;
     font-size: 2rem;
-    text-align: right;
+    text-align: center;
     background: rgba(0, 0, 0, 0.6);
     cursor: pointer;
   }
@@ -299,6 +299,16 @@
     gap: 20px;
   }
 
+  .service__title {
+    font-size: 1.8rem;
+    line-height: 1.22;
+  }
+
+  .service__desc {
+    max-width: none;
+    font-size: 1rem;
+    line-height: 2;
+  }
   .service__control {
     display: none;
   }
@@ -564,7 +574,8 @@
   }
 
   .footer__close-icon {
-    top: -20px;
+    top: unset;
+    bottom: 0;
   }
 
   .footer__sub-title {
