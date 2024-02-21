@@ -544,6 +544,11 @@
   .blog__title {
     font-size: 1.6rem;
     line-height: 1.87;
+    padding-bottom: 20px;
+  }
+
+  .blog__date::before {
+    bottom: 2px;
   }
 
   .blog__date {
