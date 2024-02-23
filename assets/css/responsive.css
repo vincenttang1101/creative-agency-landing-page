@@ -108,18 +108,6 @@
     opacity: 1;
     transform: translateX(0%);
   }
-
-  .footer__close-icon {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-right: 10px;
-    font-size: 2rem;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-  }
 }
 
 /* Desktop */
@@ -454,7 +442,7 @@
   }
 
   .service__resp-control-btn {
-    width: 200px;
+    width: 40vw;
     height: 40px;
   }
 
@@ -574,16 +562,24 @@
   }
 
   .footer__row-resp {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     inset: 0 0 0 0;
     padding: 0;
   }
 
-  .footer__close-icon {
-    top: unset;
-    bottom: 0;
-  }
-
   .footer__sub-title {
     font-size: 1.5rem;
+  }
+
+  .footer__close-icon {
+    position: absolute;
+    display: block;
+    top: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
   }
 }

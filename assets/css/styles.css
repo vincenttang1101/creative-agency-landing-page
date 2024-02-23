@@ -1295,3 +1295,7 @@ button {
   font-size: 28px;
   cursor: pointer;
 }
+
+.footer__close-icon {
+  display: none;
+}
