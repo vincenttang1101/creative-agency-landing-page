@@ -303,6 +303,9 @@
 
   .service__list {
     grid-template-columns: repeat(3, 100%);
+    padding: 0 1px 1px;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
   }
 
   .service__item {
@@ -579,6 +582,7 @@
     left: 0;
     right: 0;
     text-align: center;
+    cursor: pointer;
     background: rgba(0, 0, 0, 0.5);
   }
 }
